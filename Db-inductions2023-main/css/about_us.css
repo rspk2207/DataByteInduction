@@ -1,0 +1,186 @@
+.about-us-introduction {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #222222;
+    padding-top: 3.1em;
+}
+.site-navbar-wrapper{
+    font-size: 1.2rem;
+  }
+.about-us-section-wrapper {
+    padding-top: 1.66em;
+}
+
+.about-us-description {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #222222;
+    padding-top:.45em
+}
+
+.gallery-column img {
+    background: url("/assets/image_placeholder.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.highlights-section {
+    margin-top: 1.66em
+}
+
+.highlights-heading {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 50px;
+    color: #CA2028;
+}
+
+.highlights-description {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 33px;
+    color: #222222;
+}
+
+.questions-set {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 1.66em;
+    justify-content: space-around; 
+    flex-flow: row wrap;
+}
+
+.question-items {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 1em;
+    color: #CA2028;
+    margin-top: .75em;
+    margin-right: .2em;
+    margin-left: .2em;
+}
+
+.question-description {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .45em;
+    line-height: 1.5em;
+    color: #202020;
+    text-align: right;
+}
+
+.question-items-special {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 1em;
+    color: #CA2028;
+    margin-top: .75em;
+    text-align: center;
+    margin-bottom: .74em;
+}
+
+.question-description-special {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: .9em;
+    line-height: 1.25em;
+    color: #202020;
+    text-align: center;
+}
+
+.website-link{
+    text-align: center;
+    margin-bottom: 2.25em;
+}
+
+@media screen and (max-width: 600px) {
+    .questions-set {
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+
+    .question-items {
+        font-size: 1.33em;
+        display: block;
+        margin: 0 auto;
+        margin-top: .75em;
+    }
+
+    .question-term{
+        float: left;
+    }
+
+    .question-description {
+        font-size: .60em;
+        float: left;
+        margin-top: .35em;
+        margin-left: .1em;
+    }
+
+    .question-items-special {
+        font-size: 1.33em;
+    }
+
+    .question-description-special {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .question-items {
+        font-size: 1em;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+
+    .question-term{
+        float: left;
+    }
+
+    .question-description {
+        font-size: .45em;
+        float: left;
+        margin-top: .60em;
+        margin-left: .1em;
+    }
+
+    .question-items-special {
+        font-size: 1em;
+    }
+
+    .question-description-special {
+        margin-top: 1em;
+        font-size: .6em;
+    }
+    .about-us-description{
+        font-size: 0.7em;
+    }
+    .about-us-introduction{
+        font-size: 0.7em;
+    }
+    .highlights-description{
+        font-size: 0.8em;
+    }
+    .highlights-heading{
+        font-size: 1.75em;
+    }
+}
