@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="4;url=index.html" />
+    <title>DataByte</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+    />
+  </head>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #typedtext {
+      /* position: absolute;
+      padding-left: 20%;
+      padding-top: 6%; */
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 30, 0.9);
+      color: white;
+      font-size: 2em;
+      font-family: "Source Code Pro", monospace;
+    }
+
+    @media screen and (max-width: 600px) {
+      #typedtext {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+  <body>
+    <div id="typedtext"></div>
+    <script type="text/javascript">
+      // set up text to print, each item in array is new line
+      var aText = new Array(
+        ">>> from sklearn import datasets",
+        ">>> from sklearn.svm import SVC",
+        ">>> DB = datasets.load_DB()",
+        ">>> clf = SVC()",
+        ">>> clf.fit(DB.data, DB.target_names[DB.target])",
+        ">>>list(clf.predict(DB.data[0]))",
+        "",
+        " ['DataByte']"
+      );
+      var iSpeed = 10; // time delay of print out
+      var iIndex = 0; // start printing array at this posision
+      var iArrLength = aText[0].length; // the length of the text array
+      var iScrollAt = 20; // start scrolling up at this many lines
+
+      var iTextPos = 0; // initialise text position
+      var sContents = ""; // initialise contents variable
+      var iRow; // initialise current row
+
+      function typewriter() {
+        sContents = " ";
+        iRow = Math.max(0, iIndex - iScrollAt);
+        var destination = document.getElementById("typedtext");
+
+        while (iRow < iIndex) {
+          sContents += aText[iRow++] + "<br />";
+        }
+        destination.innerHTML =
+          sContents + aText[iIndex].substring(0, iTextPos) + "_";
+        if (iTextPos++ == iArrLength) {
+          iTextPos = 0;
+          iIndex++;
+          if (iIndex != aText.length) {
+            iArrLength = aText[iIndex].length;
+            setTimeout("typewriter()", 50);
+          }
+        } else {
+          setTimeout("typewriter()", iSpeed);
+        }
+      }
+
+      typewriter();
+
+      setTimeout(function(){
+      	window.location = "main";
+      },4000);
+    </script>
+  </body>
+</html>
+
+<!-- Actual Line for Databyte part above-->
+<!-- 
+<pre style='font-size:2em'>   ['DataByte']</pre> -->

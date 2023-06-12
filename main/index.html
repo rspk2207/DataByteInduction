@@ -1,0 +1,316 @@
+<html
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>
+    Databyte inductions 2023
+  </title>
+  <link rel="icon" href="assets/favicon.ico" type="image/ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--Imports-->
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!--Stylesheets-->
+  <link href="css/base.css" type="text/css" rel="stylesheet" />
+  <link href="css/base_hamburger.css" type="text/css" rel="stylesheet" />
+  <link href="css/base_mobile.css" type="text/css" rel="stylesheet" />
+  <link href="css/fix_header.css" type="text/css" rel="stylesheet" />
+  <link href="css/index.css" type="text/css" rel="stylesheet" />
+  <link href="css/index_mobile.css" type="text/css" rel="stylesheet" />
+
+  <!--Javascript-->
+  <script type="text/javascript" src="js/notifications.js"></script>
+  <script type="text/javascript" src="js/base_hamburger.js"></script>
+  <script type="text/javascript" src="js/fix_header.js"></script>
+  <script type="text/javascript" src="js/toggle_overlay.js"></script>
+
+</head>
+
+<body>
+  <nav class="site-navbar initial" id="site-navbar">
+    <div class="site-container">
+      <div class="site-navbar-wrapper">
+        <div>
+          <a href="/" class="site-home-link">
+            <img src="assets/logo.png" class="site-logo" alt="Databyte logo" />
+            <div class="site-logo-text">
+              Inductions
+              <br />
+              2023
+            </div>
+          </a>
+        </div>
+        <div class="navlinks-horizontal">
+          <a href="./" class="navlink" selected="True">
+            HOME
+          </a>
+          <a href="about_us" class="navlink">
+            ABOUT US
+          </a>
+          <a href="CV" class="navlink">
+            CV
+          </a>
+          <a href="NLP" class="navlink">
+            NLP
+          </a>
+          <a href="WEB DEV" class="navlink">
+          WEB DEV
+          </a>
+          <a href="APP DEV" class="navlink">
+            APP DEV
+          </a>
+          <a href="https://forms.gle/PkX2nDSAd8GWpNj68" class="navlink">
+            REGISTER
+          </a>
+        </div>
+        <div class="navlinks-mobile">
+          <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" onclick="addOverlay()" />
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+          </label>
+          <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+              <li>
+                <a href="./" class="navlink" selected="True">
+                  <div>
+                    HOME
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="about_us" class="navlink">
+                  <div>
+                    ABOUT US
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="CV" class="navlink">
+                  <div>
+                    CV
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="NLP" class="navlink">
+                  <div>
+                    NLP
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="WEB DEV" class="navlink">
+                  <div>
+                  WEB DEV
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="APP DEV" class="navlink">
+                  <div>
+                    APP DEV
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="overlay" onclick="hideOverlay()"></div>
+  <main class="home">
+    <section class="why-databyte-section">
+      <div class="site-container">
+        <div class="why-databyte-wrapper">
+          <div class="why-databyte-content">
+            <h1 class="main-page-heading">
+              <div class="heading-background-box"></div>
+              <div class="heading-text">WHY DATABYTE?</div>
+            </h1>
+
+            <div class="why-databyte-text">
+            Our club offers a supportive environment where you can collaborate with like-minded individuals, participate in captivating projects, and attend workshops led by industry experts. Whether you're passionate about creating intelligent algorithms or fascinated by the power of data-driven decision-making, our club is the perfect platform to fuel your curiosity and enhance your skills.
+            </div>
+            <a href="about_us/">
+              <button class="site-cta-button"
+                onclick="ga('send', 'event', 'Inner Redirect', 'change page about us', 'Redirect to About us');">
+                Know More
+              </button>
+            </a>
+          </div>
+          <div class="why-databyte-illustration"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coloured-container">
+      <div class="site-container">
+        <div class="main-container">
+          <div class="illustration-container"></div>
+          <div class="design-information-container">
+            <h1 class="main-page-heading">
+              <div class="heading-background-box"></div>
+              <div class="heading-text">DEVELOPMENT</div>
+            </h1>
+            <div class="heading-information">
+            From crafting visually stunning user interfaces to building robust backend systems, we delve into HTML, CSS, JavaScript, and programming languages like Python to bring our ideas to life. Join us on this journey of innovation and creativity as we empower ourselves with the skills to shape the digital landscape.
+            </div>
+          
+          </div>
+          <div class="development-information-container">
+            <h1 class="main-page-heading">
+              <div class="heading-background-box"></div>
+              <div class="heading-text">ML</div>
+            </h1>
+            <div class="heading-information">
+             From developing intelligent algorithms to analyzing complex datasets, we dive into the realm of artificial intelligence and uncover patterns that drive innovation. Join our club to embark on a journey of learning, experimentation, and pushing the boundaries of what's possible with machine learning.
+            </div>
+            <a href="CV/">
+              <button class="site-cta-button"
+                onclick="ga('send', 'event', 'Inner Redirect', 'change page development', 'Redirect to ML');">
+                Enroll Now
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="updates-section">
+      <div class="site-container">
+        <div class="updates-wrapper">
+          <h1 class="main-page-heading">
+            <div class="heading-background-box"></div>
+            <div class="heading-text">ANNOUNCEMENTS</div>
+          </h1>
+        </div>
+        <div class="updates">
+
+          <div class="update-item">
+            <div class="update-content">
+              <div class="update-time">25 April, 2023</div>
+              <div class="update-text">
+                <p>Databyte will be conducting the Inductions Test for Developers on <strong>27 April, 2023 6:30 PM</strong>
+                  (for 1st year students only).</p>
+                <p>Register <a href="https://forms.gle/PkX2nDSAd8GWpNj68" target="_blank">here</a> for the
+                  test.</p>
+              </div>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-content">
+              <div class="update-time">25 March, 2023</div>
+              <div class="update-text">
+                <p> Tasks published on the website. Deadline - <strong>25 April, 2023 11:59 PM</strong>.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-content">
+              <div class="update-time">20 March, 2023</div>
+              <div class="update-text">
+               Lorem ipsum dolor sit, amet consectetur adipisicing.
+              </div>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-content">
+              <div class="update-time">10 March, 2023</div>
+              <div class="update-text">
+                Databyte Induction Website is live.
+              </div>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-content">
+              <div class="update-time">4 March, 2023</div>
+              <div class="update-text">Databyte announces Inductions 2023.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="site-footer-wrapper">
+        <div class="sociallinks">
+   
+          <a
+            href="https://www.facebook.com/DataByteNITT"
+            class="sociallink"
+            target="_blank"
+            onclick="ga('send', 'social', 'Facebook', 'visit', 'https://www.facebook.com');"
+          >
+            <img src="assets/social_icons/fb.svg" alt="facebook-icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/databyte_nitt/"
+            class="sociallink"
+            target="_blank"
+            onclick="ga('send', 'social', 'Instagram', 'visit', 'https://www.instagram.com');"
+          >
+            <img
+              src="assets/social_icons/instagram.svg"
+              alt="instagram-icon"
+            />
+          </a>
+       
+          <a
+            href="https://github.com/DataByteNITT"
+            class="sociallink"
+            target="_blank"
+            onclick="ga('send', 'social', 'GitHub', 'visit', 'https://github.com');"
+          >
+            <img src="assets/social_icons/github.svg" alt="github-icon" />
+          </a>
+          <a
+          href="https://www.instagram.com/databyte_nitt/"
+          class="sociallink"
+          target="_blank"
+          onclick="ga('send', 'social', 'linkedin', 'visit', 'https://www.instagram.com');"
+        >
+          <img
+            src="assets/social_icons/linkedin.svg"
+            alt="linkedin-icon"
+          />
+        </a>
+          
+        </div>
+        <div class="navlinks-horizontal">
+          <a href="about_us" class="navlink">
+            ABOUT US
+          </a>
+          <a href="CV" class="navlink">
+            CV
+          </a>
+          <a href="NLP" class="navlink">
+            NLP
+          </a>
+          <a href="WEB DEV" class="navlink">
+          WEB DEV
+          </a>
+          <a href="APP DEV" class="navlink">
+          APP DEV
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
