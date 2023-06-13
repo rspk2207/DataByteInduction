@@ -27,7 +27,7 @@
     <link href="../css/fix_header.css" type="text/css" rel="stylesheet" />
     <link href="../css/about_us.css" type="text/css" rel="stylesheet" />
     <link href="../css/image_gallery.css" type="text/css" rel="stylesheet" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!--Javascript-->
     <script type="text/javascript" src="../js/notifications.js"></script>
@@ -35,7 +35,7 @@
     <script type="text/javascript" src="../js/fix_header.js"></script>
     <script type="text/javascript" src="../js/image_gallery.js"></script>
     <script type="text/javascript" src="../js/toggle_overlay.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body id="about-us">
@@ -139,7 +139,7 @@
         </div>
     </nav>
     <div id="overlay" onclick="hideOverlay()"></div>
-    <main class="development">
+    <main class="development" >
         <section class="page-heading-background">
             <h1 class="page-heading">
                 <div class="heading-background-box"></div>
@@ -148,18 +148,18 @@
         </section>
         <section>
             <div class="site-container-about">
-                <div class="about-us-introduction">
+                <div class="about-us-introduction" data-aos="fade-left" data-aos-duration="1200">
                     Databyte offers a unique opportunity to connect, gain knowledge, collaborate with, and aspire to become a top developer or Analyst at the NIT Trichy campus, or beyond. The club provides access to extensive resources, allowing individuals to fully explore various fields under skilled supervision.
                 </div>
 
                 
-                <div class="about-us-section-wrapper">
+                <div class="about-us-section-wrapper" data-aos="fade-left" data-aos-duration="1500">
                     <h2 class="page-title">
                         <div class="heading-background-box"></div>
                         <div class="heading-text">ONGOING PROJECTS</div>
                     </h2>
                     <div class="about-us-description">
-                       <h3>THIRUMATHIKART</h3>
+                       <h3 style="font-family:marvelFont, sans-serif;">Thirumathikart</h3>
                        <br>Thirumathikart is an e-commerce platform supporting self-help groups. It offers a curated collection of handmade products, including textiles, jewelry, and home decor. The platform connects artisans directly with customers, providing a secure and convenient marketplace.
                         <br>
                        <br>This project is sponsored by Department of Science and Technology and mentored by Ministry of Electronics and Information Technology. The tech stack used here include Flutter, GoLang, PostgreSQL etc
@@ -168,7 +168,7 @@
                     </div>
                     <br>
                     <div class="about-us-description">
-                        <h3>ANIMAL DETECTION PROJECT</h3>
+                        <h3 style="font-family:marvelFont, sans-serif;" >Animal Detection Project</h3>
                         <br>Animal detection project aims to prevent accidents caused by animals and facilitate safer coexistence between humans and animals by leveraging image processing.
                         <br>
                         <br>This project utilizes YOLO model and image processing techniques to detect and recognize animals. Upon analyzing the presence of an animal and its proximity with respect to the human, an alarm turns on to alert the human about the presence of the animal.
@@ -176,18 +176,18 @@
                 </div>
 
             
-                <div class="about-us-section-wrapper">
+                <div class="about-us-section-wrapper" data-aos="fade-right" data-aos-duration="1500">
                     <h2 class="page-title">
                         <div class="heading-background-box"></div>
                         <div class="heading-text">RECENT WORKSHOPS</div>
                     </h2>
                     <div class="about-us-description">
-                        <h3>DATA SCIENCE WORKSHOP</h3>
+                        <h3 style="font-family:marvelFont, sans-serif;">Data Science Workshop</h3>
                         <br />
                         On March 5, 2023, a data science workshop was held as part of Vortex, the CSE department's symposium, for students from all batches. The workshop covered essential aspects of data science, including data collection, preprocessing, exploratory analysis, machine learning, and visualization. It emphasized ethics and offered practical skills for academic and professional growth, culminating in attendees receiving certificates for their dedication to enhancing their data science expertise.
                         <br />
                         <br />
-                        <h3>FUNDAMENTALS OF DEEP LEARNING WORKSHOP</h3>
+                        <h3 style="font-family:marvelFont, sans-serif;">Fundamentals Of Deep Learning</h3>
                         <br /> An extensive workshop on 'The Fundamentals of Deep Learning' took place on April 14, 2023, for students from various years. The workshop covered key concepts such as deep learning principles, neural networks, training and optimization techniques, as well as specific applications like CNNs and RNNs for image analysis and NLP. Participants received certificates upon completion of the workshop.
 
                     </div>
@@ -312,4 +312,7 @@
     </footer>
 </body>
 
+<script>
+    AOS.init();
+  </script>
 </html>

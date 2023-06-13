@@ -25,13 +25,19 @@
   <link href="css/fix_header.css" type="text/css" rel="stylesheet" />
   <link href="css/index.css" type="text/css" rel="stylesheet" />
   <link href="css/index_mobile.css" type="text/css" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!--Javascript-->
   <script type="text/javascript" src="js/notifications.js"></script>
   <script type="text/javascript" src="js/base_hamburger.js"></script>
   <script type="text/javascript" src="js/fix_header.js"></script>
   <script type="text/javascript" src="js/toggle_overlay.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
 </head>
 
 <body>
@@ -130,8 +136,8 @@
   </nav>
   <div id="overlay" onclick="hideOverlay()"></div>
   <main class="home">
-    <section class="why-databyte-section">
-      <div class="site-container">
+    <section class="why-databyte-section" data-aos="fade-right" data-aos-duration="1500">
+      <div  class="site-container">
         <div class="why-databyte-wrapper">
           <div class="why-databyte-content">
             <h1 class="main-page-heading">
@@ -154,9 +160,9 @@
       </div>
     </section>
 
-    <section class="coloured-container">
-      <div class="site-container">
-        <div class="main-container">
+    <section class="coloured-container" >
+      <div class="site-container " >
+        <div class="main-container" data-aos="fade-left" data-aos-duration="1500">
           <div class="illustration-container"></div>
           <div class="design-information-container">
             <h1 class="main-page-heading">
@@ -343,6 +349,10 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
